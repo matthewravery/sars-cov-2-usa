@@ -1,0 +1,12 @@
+name: sars-cov-2-usa-by-state
+title: sars-cov-2-usa-by-state
+username:
+account: mavery
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1959937
+bundleId: 2900573
+url: https://mavery.shinyapps.io/sars-cov-2-usa-by-state/
+when: 1584674338.18084
+asMultiple: FALSE
+asStatic: FALSE
