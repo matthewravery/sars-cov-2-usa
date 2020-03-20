@@ -58,7 +58,8 @@ ui <- fluidPage(
         p("This app shows simple visualizations of confirmed cases, deaths, and recovories from the SARS-CoV-2 virus in the United States. You can select which states (including DC and US Territories) you want to show using the option list on the right. By default, the six states with the highest deaths in the most recent day in the set are shown. There's also a thicker black line showing the US total."),
         p("Data come from the JHU github repo:  https://github.com/CSSEGISandData/COVID-19"),
         p("The by-state breakdowns in this series only go back to 9 May, so that's the date where the plots start, as well."),
-        p("Contact: 	casualinferenceblog@gmail.com")
+        p("Contact: 	casualinferenceblog@gmail.com"),
+        p("Currently, the Recoveries tab has been removed because it looks like either my data source isn't tracking it or there simply aren't any.")
     ))
 )
 
@@ -79,7 +80,7 @@ server <- function(input, output, session) {
         
         if(!input$ppnscale){
             outc <- tbc %>% 
-                filter(`Province/State` %in% c(topstates$`Province/State`)) %>% 
+                filter(`Province/State` %in% c(input$states)) %>% 
                 ggplot(aes(x = Date, y = Confirmed, color = `Province/State`)) + 
                 geom_line(size = 1) + 
                 geom_line(data = filter(tbc, `Province/State` == "Total"), color = "black", size = 2) +
@@ -88,7 +89,7 @@ server <- function(input, output, session) {
             
         } else{
             outc <- tbc %>% 
-                filter(`Province/State` %in% c(topstates$`Province/State`)) %>% 
+                filter(`Province/State` %in% c(input$states)) %>% 
                 ggplot(aes(x = Date, y = `Confirmed per million residents`, color = `Province/State`)) + 
                 geom_line(size = 1) + 
                 geom_line(data = filter(tbc, `Province/State` == "Total"), color = "black", size = 2) +
@@ -108,7 +109,7 @@ server <- function(input, output, session) {
         
         if(!input$ppnscale){
             outd <- tbd %>% 
-                filter(`Province/State` %in% c(topstates$`Province/State`)) %>% 
+                filter(`Province/State` %in% c(input$states)) %>% 
                 ggplot(aes(x = Date, y = Deaths, color = `Province/State`)) + 
                 geom_line(size = 1) + 
                 geom_line(data = filter(tbd, `Province/State` == "Total"), color = "black", size = 2) +
@@ -117,7 +118,7 @@ server <- function(input, output, session) {
             
         } else{
             outd <- tbd %>% 
-                filter(`Province/State` %in% c(topstates$`Province/State`)) %>% 
+                filter(`Province/State` %in% c(input$states)) %>% 
                 ggplot(aes(x = Date, y = `Deaths per million residents`, color = `Province/State`)) + 
                 geom_line(size = 1) + 
                 geom_line(data = filter(tbd, `Province/State` == "Total"), color = "black", size = 2) +
@@ -137,7 +138,7 @@ server <- function(input, output, session) {
     #     
     #     if(!input$ppnscale){
     #         outr <- tbd %>% 
-    #             filter(`Province/State` %in% c(topstates$`Province/State`)) %>% 
+    #             filter(`Province/State` %in% c(input$states)) %>% 
     #             ggplot(aes(x = Date, y = Confirmed, color = `Province/State`)) + 
     #             geom_line(size = 1) + 
     #             geom_line(data = filter(tbd, `Province/State` == "Total"), color = "black", size = 2) +
@@ -146,7 +147,7 @@ server <- function(input, output, session) {
     #         
     #     } else{
     #         outr <- tbd %>% 
-    #             filter(`Province/State` %in% c(topstates$`Province/State`)) %>% 
+    #             filter(`Province/State` %in% c(input$states)) %>% 
     #             ggplot(aes(x = Date, y = `Confirmed per million residents`, color = `Province/State`)) + 
     #             geom_line(size = 1) + 
     #             geom_line(data = filter(tbd, `Province/State` == "Total"), color = "black", size = 2) +
