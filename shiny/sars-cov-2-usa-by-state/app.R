@@ -57,7 +57,7 @@ ui <- fluidPage(
         h2("About:"),
         p("This app shows simple visualizations of confirmed cases, deaths, and recovories from the SARS-CoV-2 virus in the United States. You can select which states (including DC and US Territories) you want to show using the option list on the right. By default, the six states with the highest deaths in the most recent day in the set are shown. There's also a thicker black line showing the US total."),
         p("Data come from the JHU github repo:  https://github.com/CSSEGISandData/COVID-19"),
-        p("The by-state breakdowns in this series only go back to 9 May, so that's the date where the plots start, as well."),
+        p("The by-state breakdowns in this series only go back to 9 March, so that's the date where the plots start, as well."),
         p("Contact: 	casualinferenceblog@gmail.com"),
         p("Currently, the Recoveries tab has been removed because it looks like either my data source isn't tracking it or there simply aren't any.")
     ))
