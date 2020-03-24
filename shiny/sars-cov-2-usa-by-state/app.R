@@ -15,9 +15,9 @@ library(viridis)
 
 # Define UI for application that draws a histogram
 
-tbc <- read_csv("data/us-confirmed-cleaned.csv")
-tbd <- read_csv("data/us-deaths-cleaned.csv")
-tbr <- read_csv("data/us-recovered-cleaned.csv")
+tbd <- tbc <- read_csv("data/cleaned-data-all-series.csv")
+# tbd <- read_csv("data/us-deaths-cleaned.csv")
+# tbr <- read_csv("data/us-recovered-cleaned.csv")
 
 states <- tbd$`Province/State`[tbd$`Province/State` != "Total"] %>% 
     unique %>% 
@@ -55,11 +55,12 @@ ui <- fluidPage(
                         # tabPanel("Recoveries", plotOutput("recovered")
                         ),
         h2("About:"),
-        p("This app shows simple visualizations of confirmed cases, deaths, and recovories from the SARS-CoV-2 virus in the United States. You can select which states (including DC and US Territories) you want to show using the option list on the right. By default, the six states with the highest deaths in the most recent day in the set are shown. There's also a thicker black line showing the US total."),
+        p("This app shows simple visualizations of confirmed cases, deaths, and recovories from the SARS-CoV-2 virus in the United States. You can select which states (including DC and US Territories) you want to show using the option list on the right. By default, the six states with the highest deaths in the most recent day in the set are shown."),
         p("Data come from the JHU github repo:  https://github.com/CSSEGISandData/COVID-19"),
         p("The by-state breakdowns in this series only go back to 9 March, so that's the date where the plots start, as well."),
         p("Contact: 	casualinferenceblog@gmail.com"),
-        p("Currently, the Recoveries tab has been removed because it looks like either my data source isn't tracking it or there simply aren't any.")
+        p("Currently, the Recoveries tab has been removed because it looks like either my data source isn't tracking it or there simply aren't any."),
+        p("Note: On 23 March, I had to revise the data source, since JHU's feed ceased updating US states for their time series data. I now generate the time series data above from their daily updates.")
     ))
 )
 
