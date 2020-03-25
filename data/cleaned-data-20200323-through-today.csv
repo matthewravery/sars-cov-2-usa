@@ -1,116 +1,173 @@
-Province/State,Date,Confirmed,Deaths,Recovered
-Alabama,2020-03-23,196,0,0
-Alaska,2020-03-23,30,0,0
-American Samoa,2020-03-23,0,0,0
-Arizona,2020-03-23,235,2,0
-Arkansas,2020-03-23,192,0,0
-California,2020-03-23,2108,39,0
-Colorado,2020-03-23,704,7,0
-Connecticut,2020-03-23,415,10,0
-Delaware,2020-03-23,68,0,0
-District of Columbia,2020-03-23,120,2,0
-Florida,2020-03-23,1227,18,0
-Georgia,2020-03-23,772,25,0
-Guam,2020-03-23,29,1,0
-Hawaii,2020-03-23,56,0,0
-Idaho,2020-03-23,68,0,0
-Illinois,2020-03-23,1285,12,0
-Indiana,2020-03-23,270,7,0
-Iowa,2020-03-23,105,0,0
-Kansas,2020-03-23,84,2,0
-Kentucky,2020-03-23,123,4,0
-Louisiana,2020-03-23,1172,35,0
-Maine,2020-03-23,107,0,0
-Maryland,2020-03-23,290,3,0
-Massachusetts,2020-03-23,777,9,0
-Michigan,2020-03-23,1329,15,0
-Minnesota,2020-03-23,234,1,0
-Mississippi,2020-03-23,249,1,0
-Missouri,2020-03-23,187,4,0
-Montana,2020-03-23,34,0,0
-Nebraska,2020-03-23,51,0,0
-Nevada,2020-03-23,245,4,0
-New Hampshire,2020-03-23,101,1,0
-New Jersey,2020-03-23,2844,27,0
-New Mexico,2020-03-23,83,0,0
-New York,2020-03-23,20884,158,0
-North Carolina,2020-03-23,353,0,0
-North Dakota,2020-03-23,30,0,0
-Northern Mariana Islands,2020-03-23,0,0,0
-Ohio,2020-03-23,443,6,0
-Oklahoma,2020-03-23,81,2,0
-Oregon,2020-03-23,191,5,0
-Pennsylvania,2020-03-23,698,6,0
-Puerto Rico,2020-03-23,31,2,0
-Rhode Island,2020-03-23,106,0,0
-South Carolina,2020-03-23,298,5,0
-South Dakota,2020-03-23,28,1,0
-Tennessee,2020-03-23,614,2,0
-Texas,2020-03-23,758,9,0
-Utah,2020-03-23,257,1,0
-Vermont,2020-03-23,75,5,0
-Virgin Islands,2020-03-23,7,0,0
-Virginia,2020-03-23,254,6,0
-Washington,2020-03-23,2221,109,0
-West Virginia,2020-03-23,16,0,0
-Wisconsin,2020-03-23,425,5,0
-Wuhan Evacuee,2020-03-23,4,0,0
-Wyoming,2020-03-23,26,0,0
-Alabama,2020-03-24,242,0,0
-Alaska,2020-03-24,34,0,0
-American Samoa,2020-03-24,0,0,0
-Arizona,2020-03-24,326,5,0
-Arkansas,2020-03-24,219,2,0
-California,2020-03-24,2538,50,0
-Colorado,2020-03-24,723,8,0
-Connecticut,2020-03-24,618,12,0
-Delaware,2020-03-24,104,0,0
-District of Columbia,2020-03-24,141,2,0
-Florida,2020-03-24,1412,18,0
-Georgia,2020-03-24,1026,32,0
-Guam,2020-03-24,32,1,0
-Hawaii,2020-03-24,90,1,0
-Idaho,2020-03-24,81,0,0
-Illinois,2020-03-24,1537,16,0
-Indiana,2020-03-24,368,12,0
-Iowa,2020-03-24,124,0,0
-Kansas,2020-03-24,100,2,0
-Kentucky,2020-03-24,162,4,0
-Louisiana,2020-03-24,1388,46,0
-Maine,2020-03-24,118,0,0
-Maryland,2020-03-24,349,4,0
-Massachusetts,2020-03-24,1159,11,0
-Michigan,2020-03-24,1793,24,0
-Minnesota,2020-03-24,261,1,0
-Mississippi,2020-03-24,320,1,0
-Missouri,2020-03-24,257,7,0
-Montana,2020-03-24,51,0,0
-Nebraska,2020-03-24,66,0,0
-Nevada,2020-03-24,278,4,0
-New Hampshire,2020-03-24,101,1,0
-New Jersey,2020-03-24,3675,44,0
-New Mexico,2020-03-24,100,0,0
-New York,2020-03-24,25681,210,0
-North Carolina,2020-03-24,495,0,0
-North Dakota,2020-03-24,36,0,0
-Northern Mariana Islands,2020-03-24,0,0,0
-Ohio,2020-03-24,567,8,0
-Oklahoma,2020-03-24,106,3,0
-Oregon,2020-03-24,210,8,0
-Pennsylvania,2020-03-24,946,8,0
-Puerto Rico,2020-03-24,39,2,0
-Recovered,2020-03-24,0,0,348
-Rhode Island,2020-03-24,124,0,0
-South Carolina,2020-03-24,342,5,0
-South Dakota,2020-03-24,30,1,0
-Tennessee,2020-03-24,772,2,0
-Texas,2020-03-24,955,12,0
-Utah,2020-03-24,298,1,0
-Vermont,2020-03-24,95,7,0
-Virgin Islands,2020-03-24,17,0,0
-Virginia,2020-03-24,293,9,0
-Washington,2020-03-24,2328,116,0
-West Virginia,2020-03-24,22,0,0
-Wisconsin,2020-03-24,481,5,0
-Wuhan Evacuee,2020-03-24,4,0,0
-Wyoming,2020-03-24,29,0,0
+Province/State,Confirmed,Deaths,Recovered,Date
+Alabama,157,0,0,2020-03-22
+Alaska,20,0,0,2020-03-22
+American Samoa,0,0,0,2020-03-22
+Arizona,152,2,0,2020-03-22
+Arkansas,165,0,0,2020-03-22
+California,1646,30,0,2020-03-22
+Colorado,591,6,0,2020-03-22
+Connecticut,327,8,0,2020-03-22
+Delaware,56,0,0,2020-03-22
+District of Columbia,102,2,0,2020-03-22
+Florida,1004,13,0,2020-03-22
+Georgia,621,25,0,2020-03-22
+Guam,27,1,0,2020-03-22
+Hawaii,53,0,0,2020-03-22
+Idaho,42,0,0,2020-03-22
+Illinois,1049,9,0,2020-03-22
+Indiana,204,6,0,2020-03-22
+Iowa,90,0,0,2020-03-22
+Kansas,65,2,0,2020-03-22
+Kentucky,103,3,0,2020-03-22
+Louisiana,837,20,0,2020-03-22
+Maine,89,0,0,2020-03-22
+Maryland,244,3,0,2020-03-22
+Massachusetts,646,5,0,2020-03-22
+Michigan,1035,9,0,2020-03-22
+Minnesota,167,1,0,2020-03-22
+Mississippi,207,1,0,2020-03-22
+Missouri,87,3,0,2020-03-22
+Montana,34,0,0,2020-03-22
+Nebraska,51,0,0,2020-03-22
+Nevada,190,2,0,2020-03-22
+New Hampshire,74,0,0,2020-03-22
+New Jersey,1914,20,0,2020-03-22
+New Mexico,57,0,0,2020-03-22
+New York,15800,117,0,2020-03-22
+North Carolina,305,0,0,2020-03-22
+North Dakota,28,0,0,2020-03-22
+Northern Mariana Islands,0,0,0,2020-03-22
+Ohio,356,3,0,2020-03-22
+Oklahoma,67,2,0,2020-03-22
+Oregon,161,5,0,2020-03-22
+Pennsylvania,509,4,0,2020-03-22
+Puerto Rico,23,1,0,2020-03-22
+Rhode Island,83,0,0,2020-03-22
+South Carolina,196,3,0,2020-03-22
+South Dakota,21,1,0,2020-03-22
+Tennessee,505,2,0,2020-03-22
+Texas,643,7,0,2020-03-22
+Utah,162,1,0,2020-03-22
+Vermont,52,2,0,2020-03-22
+Virgin Islands,6,0,0,2020-03-22
+Virginia,220,6,0,2020-03-22
+Washington,1997,97,0,2020-03-22
+West Virginia,16,0,0,2020-03-22
+Wisconsin,381,4,0,2020-03-22
+Wuhan Evacuee,4,0,0,2020-03-22
+Wyoming,26,0,0,2020-03-22
+Alabama,196,0,0,2020-03-23
+Alaska,30,0,0,2020-03-23
+American Samoa,0,0,0,2020-03-23
+Arizona,235,2,0,2020-03-23
+Arkansas,192,0,0,2020-03-23
+California,2108,39,0,2020-03-23
+Colorado,704,7,0,2020-03-23
+Connecticut,415,10,0,2020-03-23
+Delaware,68,0,0,2020-03-23
+District of Columbia,120,2,0,2020-03-23
+Florida,1227,18,0,2020-03-23
+Georgia,772,25,0,2020-03-23
+Guam,29,1,0,2020-03-23
+Hawaii,56,0,0,2020-03-23
+Idaho,68,0,0,2020-03-23
+Illinois,1285,12,0,2020-03-23
+Indiana,270,7,0,2020-03-23
+Iowa,105,0,0,2020-03-23
+Kansas,84,2,0,2020-03-23
+Kentucky,123,4,0,2020-03-23
+Louisiana,1172,35,0,2020-03-23
+Maine,107,0,0,2020-03-23
+Maryland,290,3,0,2020-03-23
+Massachusetts,777,9,0,2020-03-23
+Michigan,1329,15,0,2020-03-23
+Minnesota,234,1,0,2020-03-23
+Mississippi,249,1,0,2020-03-23
+Missouri,187,4,0,2020-03-23
+Montana,34,0,0,2020-03-23
+Nebraska,51,0,0,2020-03-23
+Nevada,245,4,0,2020-03-23
+New Hampshire,101,1,0,2020-03-23
+New Jersey,2844,27,0,2020-03-23
+New Mexico,83,0,0,2020-03-23
+New York,20884,158,0,2020-03-23
+North Carolina,353,0,0,2020-03-23
+North Dakota,30,0,0,2020-03-23
+Northern Mariana Islands,0,0,0,2020-03-23
+Ohio,443,6,0,2020-03-23
+Oklahoma,81,2,0,2020-03-23
+Oregon,191,5,0,2020-03-23
+Pennsylvania,698,6,0,2020-03-23
+Puerto Rico,31,2,0,2020-03-23
+Rhode Island,106,0,0,2020-03-23
+South Carolina,298,5,0,2020-03-23
+South Dakota,28,1,0,2020-03-23
+Tennessee,614,2,0,2020-03-23
+Texas,758,9,0,2020-03-23
+Utah,257,1,0,2020-03-23
+Vermont,75,5,0,2020-03-23
+Virgin Islands,7,0,0,2020-03-23
+Virginia,254,6,0,2020-03-23
+Washington,2221,109,0,2020-03-23
+West Virginia,16,0,0,2020-03-23
+Wisconsin,425,5,0,2020-03-23
+Wuhan Evacuee,4,0,0,2020-03-23
+Wyoming,26,0,0,2020-03-23
+Alabama,242,0,0,2020-03-24
+Alaska,34,0,0,2020-03-24
+American Samoa,0,0,0,2020-03-24
+Arizona,326,5,0,2020-03-24
+Arkansas,219,2,0,2020-03-24
+California,2538,50,0,2020-03-24
+Colorado,723,8,0,2020-03-24
+Connecticut,618,12,0,2020-03-24
+Delaware,104,0,0,2020-03-24
+District of Columbia,141,2,0,2020-03-24
+Florida,1412,18,0,2020-03-24
+Georgia,1026,32,0,2020-03-24
+Guam,32,1,0,2020-03-24
+Hawaii,90,1,0,2020-03-24
+Idaho,81,0,0,2020-03-24
+Illinois,1537,16,0,2020-03-24
+Indiana,368,12,0,2020-03-24
+Iowa,124,0,0,2020-03-24
+Kansas,100,2,0,2020-03-24
+Kentucky,162,4,0,2020-03-24
+Louisiana,1388,46,0,2020-03-24
+Maine,118,0,0,2020-03-24
+Maryland,349,4,0,2020-03-24
+Massachusetts,1159,11,0,2020-03-24
+Michigan,1793,24,0,2020-03-24
+Minnesota,261,1,0,2020-03-24
+Mississippi,320,1,0,2020-03-24
+Missouri,257,7,0,2020-03-24
+Montana,51,0,0,2020-03-24
+Nebraska,66,0,0,2020-03-24
+Nevada,278,4,0,2020-03-24
+New Hampshire,101,1,0,2020-03-24
+New Jersey,3675,44,0,2020-03-24
+New Mexico,100,0,0,2020-03-24
+New York,25681,210,0,2020-03-24
+North Carolina,495,0,0,2020-03-24
+North Dakota,36,0,0,2020-03-24
+Northern Mariana Islands,0,0,0,2020-03-24
+Ohio,567,8,0,2020-03-24
+Oklahoma,106,3,0,2020-03-24
+Oregon,210,8,0,2020-03-24
+Pennsylvania,946,8,0,2020-03-24
+Puerto Rico,39,2,0,2020-03-24
+Recovered,0,0,348,2020-03-24
+Rhode Island,124,0,0,2020-03-24
+South Carolina,342,5,0,2020-03-24
+South Dakota,30,1,0,2020-03-24
+Tennessee,772,2,0,2020-03-24
+Texas,955,12,0,2020-03-24
+Utah,298,1,0,2020-03-24
+Vermont,95,7,0,2020-03-24
+Virgin Islands,17,0,0,2020-03-24
+Virginia,293,9,0,2020-03-24
+Washington,2328,116,0,2020-03-24
+West Virginia,22,0,0,2020-03-24
+Wisconsin,481,5,0,2020-03-24
+Wuhan Evacuee,4,0,0,2020-03-24
+Wyoming,29,0,0,2020-03-24
