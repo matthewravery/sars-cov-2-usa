@@ -43,7 +43,7 @@ ui <- fluidPage(
             h2("Plot Inputs"),
             checkboxInput("logarithmicY", "Show y-axis on log scale", FALSE),
             checkboxInput("ppnscale", "Scale y-axis per million residents", FALSE),
-            checkboxGroupInput("states","Select states",
+            selectizeInput("states","Select states", choices = states, multiple = TRUE,
                                selected = "topdeathstates")
         ),
 
@@ -69,7 +69,7 @@ server <- function(input, output, session) {
     
     observe({
         
-        updateCheckboxGroupInput(session, inputId = "states",
+        updateSelectizeInput(session, inputId = "states",
                                  label = "Select states:",
                                  choices = states, selected = topdeathstates$`Province/State`)
         
