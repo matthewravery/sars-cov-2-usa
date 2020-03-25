@@ -2,6 +2,9 @@
 
 get_daily_data <- function(thisday){
   
+  
+  thisdate <- str_split(thisday, ".csv")[[1]][1]
+  
   read_csv(paste0("../COVID-19/csse_covid_19_data/csse_covid_19_daily_reports/", thisday)) %>% 
     filter(`Country_Region` == "US",
            `Province_State` != c("Diamond Princess"),
@@ -9,11 +12,10 @@ get_daily_data <- function(thisday){
     mutate(notstate = str_detect(`Province_State`, ",")) %>% 
     filter(!notstate) %>% 
     group_by(`Province_State`) %>% 
-    summarise(Date = max(`Last_Update`),
-              Confirmed = sum(Confirmed),
+    summarise(Confirmed = sum(Confirmed),
               Deaths = sum(Deaths),
               Recovered = sum(Recovered),
-              Date = as_date(Date))
+              Date = as_date(mdy(thisday)))
   
 }
 
@@ -24,7 +26,7 @@ out <- NULL
 for(tday in thesedays){
   
   if(tday == "README.md") next
-  if(mdy(str_split(tday, ".csv")[[1]][1]) < mdy("03-23-2020")) next
+  if(mdy(str_split(tday, ".csv")[[1]][1]) < mdy("03-22-2020")) next
   
   out <- bind_rows(out, get_daily_data(tday))
   
