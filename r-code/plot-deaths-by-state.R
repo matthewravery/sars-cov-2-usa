@@ -1,6 +1,8 @@
 library(tidyverse)
 library(janitor)
 library(lubridate)
+library(directlabels)
+library(nationalparkcolors)
 
 tb <- read_csv("data/us-deaths-cleaned.csv")
 
