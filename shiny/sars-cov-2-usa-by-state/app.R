@@ -12,10 +12,14 @@ library(tidyverse)
 library(janitor)
 library(lubridate)
 library(viridis)
+library(directlabels)
+library(ggrepel)
 
 # Define UI for application that draws a histogram
 
-tbd <- tbc <- read_csv("data/cleaned-data-all-series.csv") 
+tbd <- tbc <- read_csv("data/cleaned-data-all-series.csv") %>% 
+    mutate(label = if_else(Date == max(Date), as.character(`Province/State`), NA_character_)) 
+    
 # tbd <- read_csv("data/us-deaths-cleaned.csv")
 # tbr <- read_csv("data/us-recovered-cleaned.csv")
 
@@ -86,8 +90,12 @@ server <- function(input, output, session) {
                 geom_line(size = 1) + 
                 geom_line(data = filter(tbc, `Province/State` == "Total"), color = "black", size = 2) +
                 theme_bw() +
-                scale_color_viridis_d()
-            
+                xlim(c(min(tbc$Date), date(max(tbc$Date) + 2))) +
+                scale_color_viridis_d(guide = "none") +
+                geom_label_repel(aes(label = label),
+                                 nudge_x = 1,
+                                 na.rm = TRUE)
+
         } else{
             outc <- tbc %>% 
                 filter(`Province/State` %in% c(input$states)) %>% 
@@ -95,7 +103,11 @@ server <- function(input, output, session) {
                 geom_line(size = 1) + 
                 geom_line(data = filter(tbc, `Province/State` == "Total"), color = "black", size = 2) +
                 theme_bw() +
-                scale_color_viridis_d()
+                xlim(c(min(tbc$Date), date(max(tbc$Date) + 2))) +
+                scale_color_viridis_d(guide = "none") +
+                geom_label_repel(aes(label = label),
+                                 nudge_x = 1,
+                                 na.rm = TRUE)
         }
         
         
@@ -115,7 +127,11 @@ server <- function(input, output, session) {
                 geom_line(size = 1) + 
                 geom_line(data = filter(tbd, `Province/State` == "Total"), color = "black", size = 2) +
                 theme_bw() +
-                scale_color_viridis_d()
+                xlim(c(min(tbc$Date), date(max(tbc$Date) + 2))) +
+                scale_color_viridis_d(guide = "none") +
+                geom_label_repel(aes(label = label),
+                                 nudge_x = 1,
+                                 na.rm = TRUE)
             
         } else{
             outd <- tbd %>% 
@@ -124,7 +140,11 @@ server <- function(input, output, session) {
                 geom_line(size = 1) + 
                 geom_line(data = filter(tbd, `Province/State` == "Total"), color = "black", size = 2) +
                 theme_bw() +
-                scale_color_viridis_d()
+                xlim(c(min(tbc$Date), date(max(tbc$Date) + 2))) +
+                scale_color_viridis_d(guide = "none") +
+                geom_label_repel(aes(label = label),
+                                 nudge_x = 1,
+                                 na.rm = TRUE)
         }
         
         
