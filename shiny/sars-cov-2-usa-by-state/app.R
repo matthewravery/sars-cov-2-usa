@@ -15,7 +15,7 @@ library(viridis)
 
 # Define UI for application that draws a histogram
 
-tbd <- tbc <- read_csv("data/cleaned-data-all-series.csv")
+tbd <- tbc <- read_csv("data/cleaned-data-all-series.csv") 
 # tbd <- read_csv("data/us-deaths-cleaned.csv")
 # tbr <- read_csv("data/us-recovered-cleaned.csv")
 

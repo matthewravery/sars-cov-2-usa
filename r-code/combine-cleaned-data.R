@@ -1,7 +1,7 @@
 library(tidyverse)
 library(lubridate)
 
-source("r-code/clean-data-20200310-through-20200322.R")
+# source("r-code/clean-data-20200310-through-20200322.R")
 source("r-code/clean-data-20200323-through-today.R")
 
 tb <- bind_rows(read_csv("data/cleaned-data-20200310-through-20200322.csv"), 
