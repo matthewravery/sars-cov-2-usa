@@ -5,8 +5,8 @@ account: mavery
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 1959937
-bundleId: 2930017
+bundleId: 2930380
 url: https://mavery.shinyapps.io/sars-cov-2-usa-by-state/
-when: 1585267598.04569
+when: 1585275927.16308
 asMultiple: FALSE
 asStatic: FALSE
