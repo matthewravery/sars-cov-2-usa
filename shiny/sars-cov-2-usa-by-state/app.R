@@ -45,8 +45,8 @@ ui <- fluidPage(
     sidebarLayout(
         sidebarPanel(
             h2("Plot Inputs"),
-            checkboxInput("logarithmicY", "Show y-axis on log scale", FALSE),
-            checkboxInput("ppnscale", "Scale y-axis per million residents", FALSE),
+            checkboxInput("logarithmicY", "Show y-axis on log scale", T),
+            checkboxInput("ppnscale", "Scale y-axis per million residents", T),
             selectizeInput("states","Select states", choices = states, multiple = TRUE,
                                selected = "topdeathstates")
         ),
