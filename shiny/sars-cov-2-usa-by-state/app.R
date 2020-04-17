@@ -8,6 +8,7 @@
 #
 
 library(shiny)
+library(shinythemes)
 library(tidyverse)
 library(janitor)
 library(lubridate)
@@ -37,7 +38,7 @@ topdeathstates <- tbd %>%
     slice(1:6) %>% 
     select(`Province/State`)
 
-ui <- fluidPage(
+ui <- fluidPage(theme = shinytheme("superhero"),
 
     # Application title
     titlePanel("SARS-CoV-2 data in the US by State"),
