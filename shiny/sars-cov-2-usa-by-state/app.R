@@ -56,8 +56,12 @@ ui <- fluidPage(theme = shinytheme("superhero"),
         # Show a plot of the generated distribution
         mainPanel(
             tabsetPanel(type = "tabs",
-                        tabPanel("Confirmed Cases", plotOutput("confirmed")),
-                        tabPanel("Deaths", plotOutput("deaths"))
+                        tabPanel("Confirmed Cases", plotOutput("confirmed", 
+                                                               height = 500, 
+                                                               width = 800)),
+                        tabPanel("Deaths", plotOutput("deaths", 
+                                                      height = 500, 
+                                                      width = 800))
                         # tabPanel("Recoveries", plotOutput("recovered")
                         ),
         h2("About:"),
